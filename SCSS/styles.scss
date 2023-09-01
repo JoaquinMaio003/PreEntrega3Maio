@@ -1,5 +1,6 @@
 body{
     background-image: url(fondo.jpg);
+    background-color: rgb(156, 156, 170);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -221,9 +222,9 @@ nav#links a:hover{
 }
 /*VIDEOS*/
 body.fondo-1{
-    background-image: url(imagenes/fondo-2.jpg);
     background-repeat: no-repeat;
    background-size: cover;
+   background-color: darkred;
     background-position: center center;
     background-attachment: fixed;
  }
