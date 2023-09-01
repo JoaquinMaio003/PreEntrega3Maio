@@ -5,6 +5,15 @@ body{
     background-position: center center;
     background-attachment: fixed;
 }
+/*Menu*/
+h1.historia{
+    color: green;
+}
+@media screen and (max-width: 550px){
+    h1.historia{
+        display: none;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -55,7 +64,7 @@ header {
     }
 
     .cerrar-menu {
-        color: black;
+        color: white;
     }
 
     .nav {
@@ -88,10 +97,26 @@ header {
         color: #ecececec;
     }
 }
+/*INDEX PRINCIPAL*/
+#primer-texto{
+    font-size: 57px;
+}
+@media screen and (max-width: 550px){
+    #primer-texto{
+        font-size: 18px;
+        text-align: left;
+    }
+}
 h2{
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgba(253, 253, 253, 0.575);
+}
+@media screen and (max-width: 550px){
+    h2{
+        font-size: 18px;
+        text-align: left;
+    }
 }
 section{
     display: flex;
@@ -108,6 +133,12 @@ h1.sub{
     color: rgb(255, 175, 2);
     font-size:60px;
 }
+@media screen and (max-width: 550px){
+    .sub-cap-2{
+        text-align: left;
+        font-size: 15px;
+    }
+}
 h3{
     text-align: center;
     color: white;
@@ -119,24 +150,59 @@ h3{
 width: 700px;
 height: 400px;
 }
+@media screen and (max-width: 550px){
+    .img{
+        margin-top: 50px;
+        width: 300px;
+        height: 100px;
+    }
+}
+.imagen-1{
+    margin-left: 290px;
+}
+@media screen and (max-width: 550px){
+    .imagen-1{
+        margin-left: 8px;
+        width: 380px;
+        height: 380px;
+    }
+}
+@media screen and (max-width: 550px){
+    .imagen-2{
+        display: none;
+    }
+}
+.imagen-3{
+    margin-left: 350px;
+}
+@media screen and (max-width: 550px){
+    .imagen-3{
+        margin-left: 8px;
+        width: 380px;
+        height: 380px;
+    }
+}
 .video1{
     display: inline-block;
     margin-left: 100px;
 }
-.grid-item{
-    display: grid;
-    font-size: 20px;
-    grid-template-columns: 1fr 1fr;
-    gap: 130px;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 550px){
+    .video1{
+        margin: 10px;
+        height: 360px;
+        width: 360px;
+    }
 }
-#grilla{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    font-size: 30px;
+#video-gue-punicas{
+    margin-left: 550px;
+}
+@media screen and (max-width: 550px){
+    #video-gue-punicas{
+       margin-right: 300px;
+       margin: 10px;
+        height: 360px;
+        width: 360px;
+    }
 }
 a#links{ display: grid;
     margin-left: 540px;
