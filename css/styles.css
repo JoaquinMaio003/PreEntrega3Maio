@@ -285,6 +285,43 @@ h1.Productos {
   font-size: 100px;
 }
 
+div.contenedor-productos {
+  display: flex;
+}
+
+.taza {
+  margin-left: 260px;
+  height: 300px;
+  width: 300px;
+}
+
+@media screen and (max-width: 550px) {
+  .taza {
+    margin: 0px;
+    height: 200px;
+    width: 200;
+    padding: 10px;
+    overflow: hidden;
+  }
+}
+h2.titulo-productos {
+  text-align: center;
+}
+
+.bandera-producto {
+  height: 300px;
+  width: 500px;
+  margin-left: 700px;
+}
+
+@media screen and (max-width: 550px) {
+  .bandera-producto {
+    margin: 110px;
+    padding: 0px;
+    height: 200px;
+    width: 300px;
+  }
+}
 /*EMPERADORES*/
 h1.titulo-emperadores {
   color: green;
@@ -298,23 +335,27 @@ h1.titulo-emperadores {
   left: -9px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 550px) {
   h1.titulo-emperadores {
     padding: 20%;
     font-size: 40px;
   }
 }
+@media (max-width: 320px) {
+  h1.titulo-emperadores {
+    margin-top: 100px;
+    padding: 0;
+  }
+}
 h2.Generales {
   color: red;
   font-style: italic;
-  font-variant: small-caps;
-  font-size: xx-large;
   text-align: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 550px) {
   h2.Generales {
-    text-align: left;
+    font-size: 25px;
   }
 }
 h3.texto {
@@ -327,24 +368,52 @@ h3.texto {
   margin-left: 380px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 550px) {
   h3.texto {
-    margin: 0px;
+    margin-left: 120px;
     width: 300px;
     height: 200px;
     text-align: center;
     font-size: 10px;
   }
 }
+@media (max-width: 320px) {
+  h3.texto {
+    margin: 0%;
+  }
+}
 .img-pag-3 {
   margin-left: 380px;
 }
 
+@media (max-width: 550px) {
+  .img-pag-3 {
+    margin-left: 150px;
+    width: 230px;
+    height: 200px;
+  }
+}
 @media (max-width: 320px) {
   .img-pag-3 {
-    margin: 0px;
-    width: 400px;
-    height: 300px;
+    margin: 0%;
+  }
+}
+.img-pag-3-2 {
+  margin-left: 550px;
+  width: 700px;
+  height: 500px;
+}
+
+@media (max-width: 550px) {
+  .img-pag-3-2 {
+    margin-left: 150px;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 320px) {
+  .img-pag-3-2 {
+    margin: 0%;
   }
 }
 a.btn {
@@ -358,6 +427,32 @@ a.btn {
 
 body.fondo-3 {
   background-color: salmon;
+}
+
+/*QUIENES SOMOS*/
+@media (max-width: 320px) {
+  h1.titulo-quienes-somos {
+    font-size: 25px;
+  }
+}
+p.canal-youtube {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  p.canal-youtube {
+    font-size: 12px;
+  }
+}
+a.btn {
+  font-family: "pangolin", cursive;
+  font-size: 25px;
+  display: inline-block;
+  background-color: yellow;
+  padding: 15px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
