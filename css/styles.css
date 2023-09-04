@@ -7,6 +7,15 @@ body {
   background-attachment: fixed;
 }
 
+a.btn {
+  font-family: "pangolin", cursive;
+  font-size: 25px;
+  display: inline-block;
+  background-color: yellow;
+  padding: 15px;
+  text-decoration: none;
+}
+
 /*Menu*/
 h1.historia {
   color: green;
@@ -125,7 +134,7 @@ section {
 
 .subtitulo {
   font-size: 50px;
-  color: rgb(2, 199, 2);
+  color: green;
   text-align: center;
 }
 
@@ -235,7 +244,7 @@ nav#links a:hover {
 body.fondo-1 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: darkred;
+  background-color: rgba(228, 23, 23, 0.829);
   background-position: center center;
   background-attachment: fixed;
 }
@@ -255,27 +264,9 @@ h1 {
   font-size: 100px;
 }
 
-a.btn {
-  font-family: "pangolin", cursive;
-  font-size: 25px;
-  display: inline-block;
-  background-color: yellow;
-  padding: 15px;
-  text-decoration: none;
-}
-
 /*PRODUCTOS*/
 body.fondo-2 {
   background-color: green;
-}
-
-a.btn {
-  font-family: "pangolin", cursive;
-  font-size: 25px;
-  display: inline-block;
-  background-color: yellow;
-  padding: 15px;
-  text-decoration: none;
 }
 
 h1.Productos {
@@ -416,15 +407,6 @@ h3.texto {
     margin: 0%;
   }
 }
-a.btn {
-  font-family: "pangolin", cursive;
-  font-size: 25px;
-  display: inline-block;
-  background-color: yellow;
-  padding: 15px;
-  text-decoration: none;
-}
-
 body.fondo-3 {
   background-color: salmon;
 }
@@ -445,14 +427,6 @@ p.canal-youtube {
   p.canal-youtube {
     font-size: 12px;
   }
-}
-a.btn {
-  font-family: "pangolin", cursive;
-  font-size: 25px;
-  display: inline-block;
-  background-color: yellow;
-  padding: 15px;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
