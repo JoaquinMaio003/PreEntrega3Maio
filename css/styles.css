@@ -1,6 +1,5 @@
 body {
-  background-image: url(fondo.jpg);
-  background-color: rgb(156, 156, 170);
+  background-image: url(../imagenes/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -19,6 +18,7 @@ a.btn {
 /*Menu*/
 h1.historia {
   color: green;
+  font-size: 80px;
 }
 
 @media screen and (max-width: 550px) {
@@ -115,6 +115,7 @@ header {
   }
 }
 h2 {
+  padding: 90px;
   color: black;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: rgba(253, 253, 253, 0.575);
@@ -122,8 +123,10 @@ h2 {
 
 @media screen and (max-width: 550px) {
   h2 {
+    overflow: hidden;
     font-size: 18px;
-    text-align: left;
+    text-align: center;
+    padding: 30px;
   }
 }
 section {
@@ -133,17 +136,33 @@ section {
 }
 
 .subtitulo {
-  font-size: 50px;
+  padding: 50px;
+  font-size: 60px;
   color: green;
   text-align: center;
 }
 
+@media screen and (max-width: 550px) {
+  .subtitulo {
+    text-align: center;
+    overflow: hidden;
+    font-size: 40px;
+  }
+}
 h1.sub {
+  text-align: center;
   font-family: "Pangolin", cursive;
   color: rgb(255, 175, 2);
   font-size: 60px;
 }
 
+@media screen and (max-width: 550px) {
+  h1.sub {
+    overflow: hidden;
+    font-size: 40px;
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 550px) {
   .sub-cap-2 {
     text-align: left;
@@ -166,9 +185,11 @@ h3 {
 
 @media screen and (max-width: 550px) {
   .img {
-    margin-top: 50px;
-    width: 300px;
-    height: 100px;
+    display: none;
+    overflow: hidden;
+    margin-top: 150px;
+    width: 500px;
+    height: 500px;
   }
 }
 .imagen-1 {
@@ -177,9 +198,10 @@ h3 {
 
 @media screen and (max-width: 550px) {
   .imagen-1 {
-    margin-left: 8px;
-    width: 380px;
-    height: 380px;
+    overflow: hidden;
+    margin-left: 50px;
+    width: 280px;
+    height: 280px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -188,14 +210,15 @@ h3 {
   }
 }
 .imagen-3 {
-  margin-left: 350px;
+  margin-left: 400px;
 }
 
 @media screen and (max-width: 550px) {
   .imagen-3 {
-    margin-left: 8px;
-    width: 380px;
-    height: 380px;
+    overflow: hidden;
+    margin-left: 50px;
+    width: 280px;
+    height: 280px;
   }
 }
 .video1 {
@@ -205,9 +228,10 @@ h3 {
 
 @media screen and (max-width: 550px) {
   .video1 {
-    margin: 10px;
-    height: 360px;
-    width: 360px;
+    overflow: hidden;
+    margin-left: 50px;
+    width: 280px;
+    height: 280px;
   }
 }
 #video-gue-punicas {
@@ -216,10 +240,10 @@ h3 {
 
 @media screen and (max-width: 550px) {
   #video-gue-punicas {
-    margin-right: 300px;
-    margin: 10px;
-    height: 360px;
-    width: 360px;
+    overflow: hidden;
+    margin-left: 50px;
+    width: 280px;
+    height: 280px;
   }
 }
 a#links {
@@ -244,20 +268,23 @@ nav#links a:hover {
 body.fondo-1 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(228, 23, 23, 0.829);
+  background-image: url(../imagenes/fondo-2.jpg);
   background-position: center center;
   background-attachment: fixed;
 }
 
 h2.War-Rome {
-  font-size: 30px;
+  -webkit-text-stroke-width: 2px;
+  padding: 30px;
+  font-size: 50px;
   text-align: center;
   color: black;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: rgba(253, 253, 253, 0.575);
 }
 
-h1 {
+h1.titulo-videos {
+  padding: 40px;
   text-align: center;
   font-family: "Pangolin", cursive;
   color: rgb(255, 175, 2);
@@ -266,7 +293,8 @@ h1 {
 
 /*PRODUCTOS*/
 body.fondo-2 {
-  background-color: green;
+  background-image: none;
+  background-color: #1c1c1c;
 }
 
 h1.Productos {
@@ -297,6 +325,10 @@ div.contenedor-productos {
 }
 h2.titulo-productos {
   text-align: center;
+  font-size: 50px;
+  background: none;
+  padding: 30px;
+  font-style: oblique;
 }
 
 .bandera-producto {
@@ -339,6 +371,7 @@ h1.titulo-emperadores {
   }
 }
 h2.Generales {
+  font-size: 50px;
   color: red;
   font-style: italic;
   text-align: center;
@@ -408,7 +441,11 @@ h3.texto {
   }
 }
 body.fondo-3 {
-  background-color: salmon;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagenes/coliseo-romano-al-atardecer_2560x1440_xtrafondos.com.jpg);
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 /*QUIENES SOMOS*/
@@ -427,6 +464,13 @@ p.canal-youtube {
   p.canal-youtube {
     font-size: 12px;
   }
+}
+footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
