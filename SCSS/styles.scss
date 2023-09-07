@@ -334,8 +334,7 @@ h1.titulo-emperadores{
     border-radius: -3%;
     height:fit-content;
     position: relative;
-    top: -67px;
-    left: -9px;
+   font-size: 100px;
   } 
   @media (max-width: 550px){
     h1.titulo-emperadores{
@@ -346,7 +345,7 @@ h1.titulo-emperadores{
   @media (max-width: 320px){
     h1.titulo-emperadores{
         margin-top: 100px;
-        padding: 0;
+        padding: 30px;
     }
 }
   h2.Generales{
@@ -358,6 +357,7 @@ h1.titulo-emperadores{
   @media (max-width: 550px) {
     h2.Generales{
       font-size: 25px;
+      margin-top: 40px;
     }  
   }
   h3.texto{
@@ -375,7 +375,8 @@ h1.titulo-emperadores{
       width: 300px;
       height: 200px;
       text-align: center;
-      font-size: 10px;
+      font-size: 15px;
+      padding: 20px;
     }
   }
   @media (max-width: 320px){
@@ -385,17 +386,21 @@ h1.titulo-emperadores{
 }
   .img-pag-3{
     margin-left: 380px;
+    padding: 50px;
   }
   @media (max-width: 550px){
     .img-pag-3{
-        margin-left: 150px;
-      width: 230px;
-      height: 200px;
+        margin-left: 30px;
+      width: 500px;
+      height: 400px;
     }
   }
   @media (max-width: 320px){
     .img-pag-3{
-        margin: 0%;
+        margin: 30px;
+        padding: 0px;
+        width: 250px;
+        height: 230px;
     }
 }
   .img-pag-3-2{
@@ -405,14 +410,17 @@ h1.titulo-emperadores{
   }
   @media (max-width: 550px){
     .img-pag-3-2{
-        margin-left: 150px;
-      width: 200px;
-      height: 200px;
+        margin-left: 130px;
+        width: 300px;
+        height: 300px;
     }
   }
   @media (max-width: 320px){
     .img-pag-3-2{
-        margin: 0%;
+        margin: 30px;
+        padding: 0px;
+        width: 250px;
+        height: 230px;
     }
 }
   body.fondo-3{
@@ -423,20 +431,36 @@ h1.titulo-emperadores{
      background-attachment: fixed;
   }
   /*QUIENES SOMOS*/
+  h1.titulo-quienes-somos{
+    text-align: center;
+    font-size: 70px;
+    color: gold;
+    
+  }
   @media(max-width: 320px) {
     h1.titulo-quienes-somos{
         font-size: 25px
     }
   }
   p.canal-youtube{
-    color: red;
+    color: white;
     font-size: 30px;
     text-align: center;
+    padding: 30px;
   }
     @media (max-width: 550px){
         p.canal-youtube{
             font-size: 12px;
         }
+}
+a.imagen-link{
+    margin-left: 870px;
+    padding: 0px;
+  }
+h2.texto-quienes-somos{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 30px;
 }
 footer{
     background-color: black;
