@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes somos</title>
     <link rel="shortcut icon" href="imagenes/logo.jpg" />
-    <link href="css/styles.css" rel="stylesheet"/>
-    <meta name="Historia Romana" content="Quienes trabajamos">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Quienes trabajamos">
+    <meta name="keywords" content="integrantes,Roma,canales de youtube">
     <meta name="author" content="Joaquin Maio">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="css/styles.css" rel="stylesheet"/>
 </head>
+<header>
+    <h1 class="historia" data-aos="fade-right">Historia Romana</h1>
+    <img class="logo" src="imagenes/logo.jpg" alt="Logo">
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="Emperadores.html">Emperadores</a></li>
+            <li><a href="Quienes somos.html">Quiénes somos</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Videos.html">Videos</a></li>
+        </ul>
+    </nav>
+</header>
 <a href="index.html" class="btn">Regresar</a>
 <h1 class="titulo-quienes-somos">Quienes somos?</h1>
 <body>
@@ -31,5 +46,10 @@
     <script>
         AOS.init();
       </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="estilos.js"></script>
 </body>
+<footer>
+    2023 &copy; Joaquin Maio
+</footer>
 </html>

@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videos</title>
     <link rel="shortcut icon" href="imagenes/logo.jpg" />
-    <link href="css/styles.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <meta name="Historia Romana" content="Videos de batallas">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Videos de batallas">
+    <meta name="keywords" content="batalla de Roma,Dacia,Guerra Galo,Germanicas">
     <meta name="author" content="Joaquin Maio">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="css/styles.css" rel="stylesheet"/>
 </head>
+<header>
+    <h1 class="historia" data-aos="fade-right">Historia Romana</h1>
+    <img class="logo" src="imagenes/logo.jpg" alt="Logo">
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="Emperadores.html">Emperadores</a></li>
+            <li><a href="Quienes somos.html">Quiénes somos</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Videos.html">Videos</a></li>
+        </ul>
+    </nav>
+</header>
 <a href="index.html" class="btn">Regresar</a>
 <h1 class="titulo-videos">Videos</h1>
 <body class="fondo-1">
@@ -41,5 +56,10 @@
 <iframe  src="https://www.youtube.com/embed/Z2VXuMOIx14" title="YouTube video player"  allowfullscreen></iframe>
 </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="estilos.js"></script>
 </body>
+<footer>
+    2023 &copy; Joaquin Maio
+</footer>
 </html>

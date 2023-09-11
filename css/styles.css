@@ -4,6 +4,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 a.btn {
@@ -150,6 +151,7 @@ section {
   }
 }
 h1.sub {
+  overflow: hidden;
   text-align: center;
   font-family: "Pangolin", cursive;
   color: rgb(255, 175, 2);
@@ -158,9 +160,10 @@ h1.sub {
 
 @media screen and (max-width: 550px) {
   h1.sub {
-    overflow: hidden;
+    margin-right: 150px;
+    overflow-x: hidden;
     font-size: 40px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -383,13 +386,14 @@ h2.Generales {
   }
 }
 h3.texto {
+  background-color: rgba(255, 255, 255, 0.781);
+  color: black;
+  font-size: 25px;
   display: grid;
   text-align: center;
   justify-items: center;
   align-items: center;
-  width: 1020px;
-  height: 300px;
-  margin-left: 380px;
+  margin-left: 0px;
 }
 
 @media (max-width: 550px) {
@@ -492,11 +496,14 @@ h2.texto-quienes-somos {
 }
 
 footer {
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem;
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  background: black;
+  color: white;
+  text-align: center;
+  left: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
