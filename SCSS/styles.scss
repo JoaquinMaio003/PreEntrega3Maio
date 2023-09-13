@@ -24,6 +24,7 @@ h1.historia{
     color: green;
     font-size: 80px;
 }
+
 @media screen and (max-width: 720px){
     h1.historia{
         display: none;
@@ -393,6 +394,24 @@ div.contenedor-productos{
     height: 300px;
     width: 300px;
 }
+@media screen and (max-width: 1280px){
+    .taza{
+        margin: 100px;
+        height: 200px;
+        width: 200;
+        padding: 10px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 720px){
+    .taza{
+        margin: 0px;
+        height: 200px;
+        width: 200;
+        padding: 10px;
+        overflow: hidden;
+    }
+}
 @media screen and (max-width: 550px){
     .taza{
         margin: 0px;
@@ -414,6 +433,22 @@ h2.titulo-productos{
     height: 300px;
     width: 500px;
     margin-left: 700px;
+}
+@media screen and (max-width: 1280px){
+    .bandera-producto{
+        margin-left: 420px;
+        padding: 0px;
+        height: 300px;
+        width: 500px;
+    }
+}
+@media screen and (max-width: 720px){
+    .bandera-producto{
+        margin: 200px;
+        padding: 0px;
+        height: 200px;
+        width: 300px;
+    }
 }
 @media screen and (max-width: 550px){
     .bandera-producto{
@@ -488,6 +523,20 @@ h1.titulo-emperadores{
     margin-left: 380px;
     padding: 50px;
   }
+  @media (max-width: 1280px){
+    .img-pag-3{
+        margin-left: 400px;
+      width: 500px;
+      height: 400px;
+    }
+  }
+  @media (max-width: 720px){
+    .img-pag-3{
+        margin-left: 100px;
+      width: 500px;
+      height: 400px;
+    }
+  }
   @media (max-width: 550px){
     .img-pag-3{
         margin-left: 30px;
@@ -507,6 +556,20 @@ h1.titulo-emperadores{
     margin-left: 550px;
     width: 700px;
     height: 500px;
+  }
+  @media (max-width: 1280px){
+    .img-pag-3-2{
+        margin-left: 400px;
+      width: 500px;
+      height: 400px;
+    }
+  }
+  @media (max-width: 720px){
+    .img-pag-3-2{
+        margin-left: 100px;
+      width: 500px;
+      height: 400px;
+    }
   }
   @media (max-width: 550px){
     .img-pag-3-2{
@@ -557,6 +620,16 @@ a.imagen-link{
     margin-left: 780px;
     padding: 0px;
   }
+  @media (max-width: 1280px){
+    a.imagen-link{
+        margin: 545px;
+    }
+}
+  @media (max-width: 720px){
+    a.imagen-link{
+        margin: 265px;
+    }
+}
 @media (max-width: 550px){
     a.imagen-link{
         margin: 185px;
