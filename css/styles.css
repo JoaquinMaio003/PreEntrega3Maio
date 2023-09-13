@@ -39,6 +39,7 @@ h1.historia {
   }
 }
 * {
+  overflow-x: hidden;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
