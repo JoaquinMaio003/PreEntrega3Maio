@@ -9,8 +9,7 @@ body{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    overflow-x: hidden
-    
+    overflow-x: hidden;
 }
 a.btn{
     font-family: 'pangolin', cursive;
@@ -25,19 +24,29 @@ h1.historia{
     color: green;
     font-size: 80px;
 }
+@media screen and (max-width: 720px){
+    h1.historia{
+        display: none;
+    }
+}
 @media screen and (max-width: 550px){
     h1.historia{
         display: none;
     }
 }
-* {
+@media screen and (max-width: 390px){
+    h1.historia{
+        display: none;
+    }
+}
+*{
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
-
 header {
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +73,6 @@ header {
 .cerrar-menu {
     display: none;
 }
-
 @media screen and (max-width: 550px) {
     .abrir-menu,
     .cerrar-menu {
@@ -115,7 +123,13 @@ header {
 }
 /*INDEX PRINCIPAL*/
 #primer-texto{
-    font-size: 57px;
+    font-size: 30px;
+}
+@media screen and (max-width: 720px){
+    #primer-texto{
+        font-size: 20px;
+        padding: 30px;
+    }
 }
 @media screen and (max-width: 550px){
     #primer-texto{
@@ -124,6 +138,7 @@ header {
     }
 }
 h2{
+    overflow: hidden;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 90px;
     color: black;
@@ -131,7 +146,6 @@ h2{
 }
 @media screen and (max-width: 550px){
     h2{
-        overflow: hidden;
         font-size: 18px;
         text-align: center;
         padding: 30px;
@@ -143,21 +157,20 @@ section{
     font-size: 30px;
 }
 #subtitulo{
+    overflow:hidden;
     padding: 50px;
     font-size: 60px;
     text-align: center;
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 550px){
     #subtitulo{
-        font-size: 30px;
-        
+        text-align: center;
+        font-size: 40px;
     }
 }
-@media screen and (max-width: 550px){
-    .subtitulo{
-        text-align: center;
-        overflow: hidden;
-        font-size: 40px;
+@media screen and (max-width: 390px){
+    #subtitulo{
+        font-size: 30px;
     }
 }
 @each $color in green, lightblue, violet, red, lightyellow {
@@ -190,7 +203,13 @@ h1.sub{
     margin-left: 290px;
 }
 .img{
-    @include altura-ancho;
+  width: 800px;
+  height: 200px;
+}
+@media screen and (max-width: 720px){
+    .img{
+       display: none;
+    }
 }
 @media screen and (max-width: 550px){
     .img{
@@ -203,7 +222,14 @@ h1.sub{
 }
 .imagen-1{
     @include altura-ancho;
-    margin-left: 290px;
+    margin-left: 200px;
+}
+@media screen and (max-width: 720px){
+    .imagen-1{
+        margin-left: 120px;
+       height: 400px;
+       width: 500px;
+    }
 }
 @media screen and (max-width: 550px){
     .imagen-1{
@@ -213,13 +239,19 @@ h1.sub{
         height: 280px;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 390px){
     .imagen-1{
-        margin-left: 25px;
+        margin-left: 55px;
     }
 }
 .imagen-2{
     @include altura-ancho;
+    overflow-y: hidden;
+}
+@media screen and (max-width: 720px){
+    .imagen-2{
+      display: none;
+    }
 }
 @media screen and (max-width: 550px){
     .imagen-2{
@@ -227,7 +259,15 @@ h1.sub{
     }
 }
 .imagen-3{
+    overflow-y: hidden;
     margin-left: 400px;
+}
+@media screen and (max-width: 720px){
+    .imagen-3{
+        margin-left: 120px;
+        height: 400px;
+        width: 500px;
+    }
 }
 @media screen and (max-width: 550px){
     .imagen-3{
@@ -237,34 +277,47 @@ h1.sub{
         height: 280px;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 390px){
     .imagen-3{
-        margin-left: 25px;
+        margin-left: 55px;
     }
 }
 .video1{
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 500px;
     width: 800px;
     height: 500px;
 }
+@media screen and (max-width: 720px){
+    .video1{
+        margin-left: 120px;
+        height: 400px;
+        width: 500px;
+    }
+}
 @media screen and (max-width: 550px){
     .video1{
-        overflow: hidden;
         margin-left: 150px;
         width: 280px;
         height: 280px;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 390px){
     .video1{
-        margin-left: 25px;
+        margin-left: 55px;
     }
 }
 #video-gue-punicas{
-    margin-left: 550px;
+    margin-left: 500px;
     width: 800px;
     height: 500px;
+}
+@media screen and (max-width: 720px){
+    #video-gue-punicas{
+        margin-left: 120px;
+        height: 400px;
+        width: 500px;
+    }
 }
 @media screen and (max-width: 550px){
     #video-gue-punicas{
@@ -274,9 +327,9 @@ h1.sub{
         height: 280px;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 390px){
     #video-gue-punicas{
-        margin-left: 25px;
+        margin-left: 55px;
     }
 }
 a#links{ display: grid;
@@ -296,6 +349,7 @@ nav#links a:hover{
 }
 /*VIDEOS*/
 body.fondo-1{
+    overflow-x: hidden;
     background-repeat: no-repeat;
    background-size: cover;
    background-image: url(../imagenes/fondo-2.jpg);
@@ -324,6 +378,7 @@ body.fondo-2{
 background-color: #1c1c1c;
 }
 h1.Productos{
+    overflow-y:hidden;
     text-align: center;
     font-family: 'Pangolin', cursive;
     color: rgb(255, 175, 2);
@@ -369,7 +424,7 @@ h2.titulo-productos{
 }
 /*EMPERADORES*/
 h1.titulo-emperadores{
-    color: green;
+    color: gold;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
@@ -384,9 +439,9 @@ h1.titulo-emperadores{
       font-size: 40px;
     }
   }
-  @media (max-width: 320px){
+  @media (max-width: 390px){
     h1.titulo-emperadores{
-        margin-top: 100px;
+        margin-top: 30px;
         padding: 30px;
     }
 }
@@ -411,17 +466,21 @@ h1.titulo-emperadores{
   }
   @media (max-width: 550px){
     h3.texto{
-        margin-left: 120px;
-      width: 300px;
-      height: 200px;
+        margin-left: 0px;
+      width: 100%;
+      height: 100%;
       text-align: center;
       font-size: 15px;
       padding: 20px;
     }
   }
-  @media (max-width: 320px){
+  @media (max-width: 390px){
     h3.texto{
-        margin: 0%;
+        margin-left: 0px;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+      
     }
 }
   .img-pag-3{
@@ -435,7 +494,7 @@ h1.titulo-emperadores{
       height: 400px;
     }
   }
-  @media (max-width: 320px){
+  @media (max-width: 390px){
     .img-pag-3{
         margin: 30px;
         padding: 0px;
@@ -455,7 +514,7 @@ h1.titulo-emperadores{
         height: 300px;
     }
   }
-  @media (max-width: 320px){
+  @media (max-width: 390px){
     .img-pag-3-2{
         margin: 30px;
         padding: 0px;
@@ -477,7 +536,7 @@ h1.titulo-emperadores{
     color: gold;
     
   }
-  @media(max-width: 320px) {
+  @media(max-width: 390px) {
     h1.titulo-quienes-somos{
         font-size: 25px
     }
@@ -494,9 +553,19 @@ h1.titulo-emperadores{
         }
 }
 a.imagen-link{
-    margin-left: 870px;
+    margin-left: 780px;
     padding: 0px;
   }
+@media (max-width: 550px){
+    a.imagen-link{
+        margin: 185px;
+    }
+}
+@media (max-width: 390px){
+    a.imagen-link{
+        margin: 75px;
+    }
+}
 h2.texto-quienes-somos{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
