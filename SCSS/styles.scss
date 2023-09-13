@@ -147,6 +147,12 @@ section{
     font-size: 60px;
     text-align: center;
 }
+@media screen and (max-width: 320px){
+    #subtitulo{
+        font-size: 30px;
+        
+    }
+}
 @media screen and (max-width: 550px){
     .subtitulo{
         text-align: center;
@@ -199,17 +205,17 @@ h1.sub{
     @include altura-ancho;
     margin-left: 290px;
 }
-@media screen and (max-width: 320px){
-    .imagen-1{
-        margin-left: 30px;
-    }
-}
 @media screen and (max-width: 550px){
     .imagen-1{
         overflow: hidden;
         margin-left: 150px;
         width: 280px;
         height: 280px;
+    }
+}
+@media screen and (max-width: 320px){
+    .imagen-1{
+        margin-left: 25px;
     }
 }
 .imagen-2{
@@ -223,13 +229,17 @@ h1.sub{
 .imagen-3{
     margin-left: 400px;
 }
-
 @media screen and (max-width: 550px){
     .imagen-3{
        overflow: hidden;
         margin-left: 150px;
         width: 280px;
         height: 280px;
+    }
+}
+@media screen and (max-width: 320px){
+    .imagen-3{
+        margin-left: 25px;
     }
 }
 .video1{
@@ -246,6 +256,11 @@ h1.sub{
         height: 280px;
     }
 }
+@media screen and (max-width: 320px){
+    .video1{
+        margin-left: 25px;
+    }
+}
 #video-gue-punicas{
     margin-left: 550px;
     width: 800px;
@@ -257,6 +272,11 @@ h1.sub{
         margin-left: 150px;
         width: 280px;
         height: 280px;
+    }
+}
+@media screen and (max-width: 320px){
+    #video-gue-punicas{
+        margin-left: 25px;
     }
 }
 a#links{ display: grid;

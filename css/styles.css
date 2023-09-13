@@ -143,6 +143,11 @@ section {
   text-align: center;
 }
 
+@media screen and (max-width: 320px) {
+  #subtitulo {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 550px) {
   .subtitulo {
     text-align: center;
@@ -215,6 +220,7 @@ h1.sub {
   width: 700px;
   margin-left: 290px;
 }
+
 @media screen and (max-width: 550px) {
   .imagen-1 {
     overflow: hidden;
