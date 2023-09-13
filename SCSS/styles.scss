@@ -199,6 +199,11 @@ h1.sub{
     @include altura-ancho;
     margin-left: 290px;
 }
+@media screen and (max-width: 320px){
+    .imagen-1{
+        margin-left: 30px;
+    }
+}
 @media screen and (max-width: 550px){
     .imagen-1{
         overflow: hidden;
@@ -218,6 +223,7 @@ h1.sub{
 .imagen-3{
     margin-left: 400px;
 }
+
 @media screen and (max-width: 550px){
     .imagen-3{
        overflow: hidden;
