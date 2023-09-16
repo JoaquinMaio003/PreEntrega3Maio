@@ -1,11 +1,12 @@
 @import url(_variables.scss);
+
 body {
   background-image: url(../imagenes/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  overflow-x: hidden;
+
 }
 
 a.btn {
@@ -45,9 +46,7 @@ h1.historia {
   padding: 0;
   box-sizing: border-box;
 }
-
 header {
-  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,6 +116,10 @@ header {
     color: rgba(236, 236, 236, 0.9254901961);
   }
 }
+/*div.contenedor{
+  margin: 80%;
+  padding: auto;
+}*/
 /*INDEX PRINCIPAL*/
 #primer-texto {
   font-size: 30px;
