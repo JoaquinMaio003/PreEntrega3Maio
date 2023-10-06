@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 a.btn {
@@ -39,14 +39,18 @@ h1.historia {
     display: none;
   }
 }
-*{
-  overflow-x: hidden;
+/*{
+ overflow-x: hidden;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}*/
+main{
+  overflow-x: hidden;
 }
 header {
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -116,10 +120,7 @@ header {
     color: rgba(236, 236, 236, 0.9254901961);
   }
 }
-/*div.contenedor{
-  margin: 80%;
-  padding: auto;
-}*/
+
 /*INDEX PRINCIPAL*/
 p{
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -127,6 +128,7 @@ p{
   font-size: 30px;
   color: black;
   background-color: rgba(253, 253, 253, 0.575);
+  overflow-y: hidden;
 }
 #primer-texto {
   font-size: 30px;
@@ -145,7 +147,7 @@ p{
   }
 }
 h2 {
-  overflow: hidden;
+  overflow-y: hidden;
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 90px;
   color: black;
@@ -166,7 +168,7 @@ section {
 }
 
 #subtitulo {
-  overflow: hidden;
+  overflow-y: hidden;
   padding: 50px;
   font-size: 60px;
   text-align: center;
@@ -204,7 +206,7 @@ section {
 }
 
 h1.sub {
-  overflow: hidden;
+  overflow-y: hidden;
   text-align: center;
   font-family: "Pangolin", cursive;
   color: rgb(255, 175, 2);
@@ -226,13 +228,21 @@ h1.sub {
   }
 }
 .imagen {
+  overflow-y: hidden;
   margin-left: 290px;
 }
 
 .img {
+  overflow-y: hidden;
+  margin-top: 30px;
   width: 800px;
   height: 200px;
 }
+@media screen and (max-width: 1280px){
+  .img{
+    display: none;
+  }
+}  
 
 @media screen and (max-width: 720px) {
   .img {
@@ -252,6 +262,11 @@ h1.sub {
   height: 500px;
   width: 700px;
   margin-left: 200px;
+}
+@media screen and (max-width: 1280px) {  
+  .imagen-1{
+    margin-left: 300px;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -279,6 +294,11 @@ h1.sub {
   width: 700px;
   overflow-y: hidden;
 }
+@media screen and (max-width: 1280px) {  
+  .imagen-2{
+    display: none;
+  }
+}
 
 @media screen and (max-width: 720px) {
   .imagen-2 {
@@ -293,6 +313,11 @@ h1.sub {
 .imagen-3 {
   overflow-y: hidden;
   margin-left: 400px;
+}
+@media screen and (max-width: 1280px) {  
+  .imagen-3{
+    margin-left: 110px;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -322,6 +347,12 @@ h1.sub {
   height: 500px;
 }
 
+@media screen and (max-width: 1280px) {  
+  .video1{
+    margin-left: 280px;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .video1 {
     margin-left: 120px;
@@ -345,6 +376,11 @@ h1.sub {
   margin-left: 500px;
   width: 800px;
   height: 500px;
+}
+@media screen and (max-width: 1280px) {  
+  #video-gue-punicas{
+    margin-left: 280px;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -488,7 +524,7 @@ h2.titulo-productos {
 }
 @media screen and (max-width: 720px) {
   .bandera-producto {
-    margin: 200px;
+    margin-left: 200px;
     padding: 0px;
     height: 200px;
     width: 300px;
@@ -568,14 +604,14 @@ h3.texto {
 
 @media (max-width: 1280px) {
   .img-pag-3 {
-    margin-left: 400px;
+    margin-left: 320px;
     width: 500px;
     height: 400px;
   }
 }
 @media (max-width: 720px) {
   .img-pag-3 {
-    margin-left: 100px;
+    margin-left: 70px;
     width: 500px;
     height: 400px;
   }
